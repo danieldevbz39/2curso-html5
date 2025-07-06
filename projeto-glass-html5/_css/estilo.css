@@ -1,11 +1,32 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgb(255, 255, 255); 
+    background-color: #dddddd; /*cor de fundo do site*/
+    color: rgba(0,0,0,1); /*cor da letra*/
+}
+
+
+div#interface {
+    width: 900px;/*redimecionando site*/
+    background-color: #ffffff; /*cor do interior site*/
+    margin: -20px auto 0px auto; /*definindo margin do site*/
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px; /*definindo margin recuo objetos*/
+
 }
 p{
     text-align: justify;
     text-indent: 50px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 780px;
+    top: 40px;
+}
+
+header#cabecalho {
+
 }
 
 /* Formatação de imagens com legendas */
@@ -36,4 +57,48 @@ figure.foto-legenda figcaption {
 
 figure.foto-legenda:hover figcaption {
     opacity: 1;
+}
+
+
+/* Formatação do Menu */
+nav#menu {
+    display: block; /*Flutuando bloco na tela*/
+}
+
+nav#menu ul { /* nav para (#) id menu*/
+    list-style: none; /* Sumindo com marcadores */
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+} 
+
+nav#menu li { /* exibindo bloco numa mesma linha e formatando*/
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;/*preenchendo menu na cor cinza ao passar o mouser*/
+}
+
+nav#menu h1 {
+    display: none; /*Escondendo menu príncipal*/
+}
+
+nav#menu a {
+    color: #000000; /* cor da letra menu*/
+    text-decoration: none; /*retirando subrilhado*/
+}
+
+nav#menu a:hover {
+    color: #ffffff; /*mudando cor de fundo da letra ao passar o mouser*/
+    text-decoration: underline; /*sublinhando texto ao passar o mouser no menu*/
 }
