@@ -1,7 +1,11 @@
 @charset "UTF-8";
-
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);/*importando fontes do site*/
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 body{
-    background-color: #dddddd; /*cor de fundo do site*/
+    background-color: dddddd; /*cor de fundo do site*/
     color: rgba(0,0,0,1); /*cor da letra*/
 }
 
@@ -19,15 +23,36 @@ p{
     text-indent: 50px;
 }
 
-header#cabecalho img#icone {
+header#cabecalho img#icone { /*posição do oculus*/
     position: absolute;
-    left: 780px;
-    top: 40px;
+    left: 770px;
+    top: 70px;
 }
 
-header#cabecalho {
-
+header#cabecalho { /*linha*/
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;/*imagem - usando .. volta uma pasta*/
 }
+
+header#cabecalho h1 { /*logo google glass*/
+    font-family: 'Fontelogo', sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 { /*Subtítulo A revolução*/
+    font-family: 'Titillium Web', sans-serif;
+    font-size: Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+
+
 
 /* Formatação de imagens com legendas */
 
