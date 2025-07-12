@@ -25,8 +25,8 @@ p{
 
 header#cabecalho img#icone { /*posição do oculus*/
     position: absolute;
-    left: 770px;
-    top: 70px;
+    left: 1040px;
+    top: 60px;
 }
 
 header#cabecalho { /*linha*/
@@ -95,7 +95,7 @@ nav#menu ul { /* nav para (#) id menu*/
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 550px;
 } 
 
 nav#menu li { /* exibindo bloco numa mesma linha e formatando*/
