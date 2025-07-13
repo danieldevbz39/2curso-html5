@@ -1,14 +1,33 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Escolhendo linguagem-->
+<head>
+    <meta charset="UTF-8"/> <!--Habilitando simbolos-->
+    <title>Saiba tudo sobre Google Glass</title> <!--Título do arquivo index-->
+    <link rel="stylesheet" href="_css/estilo.css"/>
+</head>
+<script language= "javascript" src= "_javascript/funcoes.js"></script> <!--integrando jscript -->
+<body>
+<div id="interface"> <!--Criando uma divisão da interface--> 
 
-[AQUI ENTRA UMA FOTO]
+    <header id="cabecalho"> <!--Início do cabeçalho-->
+    <hgroup> <!--Abrindo grupo-->
+    <h1>Google Glass</h1> <!--Título-->
+    <h2>A revolução do Google está chegando</h2> <!--Subtítulo-->
+    </hgroup> <!--Fechando Grupo-->
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+    <img id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
+    <nav id="menu"> <!--criando área de navegação-->   
+    <h1>Menu Principal</h1>
+    <!--<ol type="a" start="3"> <!-Criando lista e ordenando por letra-->
+    <ul type="disc">
+        <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li><!--Criando ítem-->
+        <li onmouseover="mudaFoto('_imagens/especificacoes-02.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href ="specs.html">Especificações</a></li>
+        <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html" >Fotos</a></li>
+        <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html" >Multimídia</a></li>
+        <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html" >Fale conosco</a></li>
+    <ul>
+</nav>
+    </header> <!--Final do cabeçalho-->
 
 Glass > Multimídia
 Sons e Vídeos
@@ -21,5 +40,12 @@ Atualizado em 01/Maio/2013
 [AQUI ENTRA UM VÍDEO]
 [AQUI ENTRA UM ÁUDIO]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+<footer id="rodape"> 
+<p>Copyright &copy;2025 - by Daniel Santos</p>
+<p><a href="https://web.facebook.com/daniel.siqueira.824510" target="_blank">Facebook</a> |
+<a href="https://www.instagram.com/daniel.s.siqueira/" target="_blank">Instagram</a> |
+<a href="https://github.com/danieldevbz39" target="_blank">Github</a></p>
+</footer>
+</div>
+</body>
+</html>
