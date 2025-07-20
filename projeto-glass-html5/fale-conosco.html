@@ -40,7 +40,7 @@
             </hgroup>
         </header>      
 
-<form method="">
+<form method="post" id="fcontato" action="mailto:danielvendas25@gmail.com">
 <fieldset id="usuario"><legend>Identificação do Usuário</legend>
     <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="20" placeholder="Digite seu Nome completo"/></p> <!--criando caixa de texto para id e nome com espaços e quantidades de letras-->
     <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Senha de 8 dígitos"/></p>
@@ -55,13 +55,36 @@
 <fieldset id="endereco"><legend>Endereço do Usuário</legend>
     <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."></p><!--Para cursor iscando após clicar na letra, no label for "" será usado id-->
     <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="999999"/></p>
-    <p><label for="cEst">Estado:</label> <input type="text" name="eEst" id="cEst" size="13" maxlength="80" placeholder="Digite seu estado"></p>
-    <p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" size="13" maxlength="80" placeholder="Digite a cidade onde mora"></p>
+    <p><label for="cEst">Estado:</label>
+    <select name="tEst" id="cEst">
+        <optgroup label="Região Sudeste">
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+        </optgroup>
+
+        <optgroup label="Região Sul">
+        <option value="BA">Bahia</option>
+        <option value="PR">Paraná</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="RS">Rio Grande do Sul</option>
+        </optgroup>
+
+    </select></p>
+    <p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" size="13" maxlength="80" placeholder="Digite a cidade onde mora" list="cidades"></p>
+    <datalist id="cidades">
+        <option value="Rio de Janeiro"></option>
+        <option value="Nova Iguaçu"></option>
+        <option value="Niterói"></option>
+        <option value="Belford Roxo"></option>
+    </datalist>
 </fieldset>
 
-<fieldset id="Mensagem"><legend>Mensagem do Usuário</legend>
-    <p><label for="cUrg">Grau de Urgência:</label> </p>
-    <p><label for="cMsg">Mensagem:</label></p>
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+    <p><label for="cUrg">Grau de Urgência:</label> 
+    Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Máx</p>
+    <p><label for="cMsg">Mensagem:</label>
+    <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
 </fieldset>
 
 <fieldset id="pedido"><legend>Quero um Google Glass</legend>
